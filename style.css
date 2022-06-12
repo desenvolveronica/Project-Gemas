@@ -1,0 +1,1101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belleza&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    max-width: 1680px;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0,0,0,0.7);
+    transition: all 0.5s ease;
+}
+
+header .logo img{
+    width: 120px;
+    margin: 0 60px;
+}
+
+header .menu ul{
+    display: flex;
+    padding: 0 150px;
+}
+header .menu ul li{
+    list-style: none;
+    padding: 0 30px;
+}
+header .menu ul li a{
+    font-family: 'Belleza', sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #b48c56
+
+}
+header .menu ul li a:hover{
+    color: #f2d2a3;
+    text-decoration: overline;
+}
+/* MENU MOBILE*/
+header .menu-mobile{
+    display: none;
+    z-index: 999;
+}
+header .menu-mobile .btn{
+    display: none;
+    z-index: 999;
+}
+header .btn{
+    display: none;
+    position: fixed;
+}
+
+/*SECTION*/
+section .container{
+    max-width: 1680px;
+    width: 100%;
+    height: 85vh;
+    margin: 0 auto;
+}
+
+/*HOME*/
+#home .container {
+    background: url(bg1.png) no-repeat;
+    background-size: cover;
+}
+#home .container .content{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 60px;
+}
+#home .container .content h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #302725
+}
+#home .container .content p{
+    font-family: 'Belleza', sans-serif;
+    font-size: 1.3rem;
+    color: #737373;
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+#home .container .content span{
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', cursive;
+    color:#b48c56;
+    letter-spacing: 5px;
+}
+#home .container .content .button{
+    padding-top: 60px;
+}
+#home .container .content .button button{
+    font-family: 'Belleza', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    background: #b48c56;
+    color: #f0f8ff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: solid 2px #b48c56;
+}
+#home .container .content .button .btn-2{
+    margin-left: 10px;
+    padding: 15px 20px;
+    background: #302725;
+    position: relative;
+    border: solid 2px #302725!important;
+}
+#home .container .content .button .btn-2:hover{
+    color:#302725
+}
+#home .container .content .button button:hover{
+    background: none;
+    color: #b48c56;
+    transform: scale(1.1);
+    font-weight: 600;
+
+}
+
+/*   BRANCH*/
+
+#branch .container {
+    background: url(bg3.png) no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+
+}
+#branch .container .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+#branch .container .title .line{
+    content: "";
+    width: 150px;
+    height: 3px;
+    background: #b48c56;
+}
+#branch .container .title h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    margin-top: 20px;
+}
+#branch .container .content{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+#branch .container .content .box{
+    width: 25%;
+    height: 70vh;
+    background: rgba(225,225,225,0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+#branch .container .content .box h3{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    letter-spacing: 8px;
+    background: #b48c56;
+    padding: 5px 10px;
+    color: #f0f8ff;
+    border-radius: 5px;
+
+}
+#branch .container .content .box img{
+    width: 120px;
+}
+#branch .container .content .box h1{
+    font-size: 1.8rem;
+    font-family: 'Belleza', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 20px;
+
+}
+#branch .container .content .box p{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+    color:#b48c56;
+}
+#branch .container .content .box button{
+    padding: 10px 20px;
+    border: none;
+    background: #302725;
+    color:#f0f8ff;
+    margin-top: 30px;
+    font-family: 'Belleza', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+
+}
+#branch .container .content .box:hover button{
+    transform: translate(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/*  About */
+
+#about .container{
+    background: url(bg2.png) no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+
+}
+#about .container .title{
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+#about .container .title .line{
+    width: 150px;
+    height: 2px;
+    background: #b48c56;
+    margin-right: 50px;
+}
+#about .container .title h1{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 15px;
+    font-size: 2rem;
+    font-weight: 200;
+}
+#about .container .title .call{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+#about .container .title .call h2{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    letter-spacing: 10px;
+}
+#about .container .title .call p{
+    font-size: 1.3rem;
+    font-family: 'Belleza', sans-serif;
+    letter-spacing: 1px;
+}
+#about .container .title .call button{
+    margin-top: 50px;
+    padding: 10px 20px;
+    border: none;
+    background: #302725;
+    font-family: 'Belleza', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color:#f0f8ff;
+    transition: all 0.2s ease;
+}
+#about .container .title .call button:hover{
+    background: none;
+    border: solid 2px #302725;
+    color:#302725;
+    transform: scale(1);
+    font-weight: 600;
+}
+
+/* PRODUCTS */
+
+#products .container{
+    background: url(bg3.png) no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+#products .container .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 90px;
+}
+#products .container .title .line{
+    width: 150px;
+    height: 2px;
+    background: #b48c56;
+}
+#products .container .title h1{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 15px;
+    font-size: 2rem;
+    font-weight: 200;
+}
+#products .container .card{
+    width: 60%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#products .container .card .box{
+    width: 100%;
+    height: 55vh;
+    background: rgba(225,225,225,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin-top: 50px;
+}
+#products .container .card .box .icon{
+    width: 50px;
+    height: 60px;
+    background: #302725;
+    text-align: center;
+    line-height: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#products .container .card .box .icon ion-icon {
+    color: #f0f8ff;
+    font-size: 1.6rem;
+
+}
+#products .container .card .box .icon:hover{
+    transform: scale(1.1);
+}
+#products .container .card .box img{
+    width: 100px;
+    margin-top: 25px;
+}
+#products .container .card .box h1{
+    margin-top: 30px;
+    font-family: 'Belleza', sans-serif;
+    font-weight: 200;
+    text-transform:uppercase;
+}
+#products .container .card .box p{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    color: #b48c56;
+    margin-top: 15px;
+}
+.owl-dot{
+    width: 15px;
+    height: 15px;
+    outline: none!important;
+    border-radius: 50%;
+    border: solid 3px #b48c56!important;
+    margin-bottom: 100%;
+}
+.owl-dot.active{
+    width: 45px;
+    border-radius: 15px;
+}
+
+/* TEAM */
+
+#team .container{
+    background: url(bg4.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 50px;
+}
+#team .container .content{
+    width: 40%;
+    height: 60vh;
+}
+#team .container .content .dev{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+#team .container .content .dev span{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+
+}
+#team .container .content .dev .line{
+    width: 180px;
+    height: 2px;
+    background: #b48c56;
+    margin-bottom: 25px;
+}
+#team .container .content p{
+    font-family: 'Belleza', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#team .container .content h2{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px
+
+}
+#team .container .content h1{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+#team .container .content .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#team .container .content .cards .image img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+#team .container .content .title p {
+    font-family: 'Belleza', sans-serif;
+    margin-top: 10px;
+}
+#team .container .content .title ul{
+    list-style: none;
+    display: flex;
+}
+#team .container .content .title ul a{
+    font-size: 30px;
+    color: #302725;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+#team .container .content .title a ion-icon{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#team .container .content .title a:hover ion-icon{
+    transform: scale(1.2);
+    color: #b48c56
+}
+
+/* NOVIDADES */
+
+#news .container{
+    background: url(bg3.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 50px;
+    height: 100vh;
+}
+#news .container .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#news .container .title .line{
+    width: 150px;
+    height: 2px;
+    background: #b48c56;
+}
+#news .container .title h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    margin-top: 20px;
+}
+#news .container .content{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+#news .container .content .box{
+    width: 20%;
+    height: 50vh;
+    background: rgba(225,225,225,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    transition: all 0.3s ease;
+}
+#news .container .content .box:hover{
+    background: rgba(48,39,37,0.9);
+    height: 60vh;
+}
+#news .container .content .box img{
+    width: 120px;
+}
+#news .container .content .box h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    background: #b48c56;
+    padding: 5px 20px;
+    color:#f0f8ff
+}
+#news .container .content .box h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    color:#737373
+}
+#news .container .content .box:hover h1{
+    color:#f0f8ff;
+}
+#news .container .content .box p{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:#b48c56;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+#news .container .content .box button{
+    font-family: 'Belleza', sans-serif;
+    border: none;
+    background: #b48c56;
+    color:#f0f8ff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+#news .container .content .box:hover button{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* FOOTER */
+#footer .container{
+    background: url(bg3.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: -100px;
+    margin-top: -10px;
+}
+#footer .container .content{
+    width: 90%;
+    height:40vh;
+    background: #f2d2a3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer .container .content .left{
+    width: 40%;
+    margin-left: 60px;
+}
+#footer .container .content .left h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.0rem;
+    font-weight: 200;
+    padding: 0 20px;
+    letter-spacing: 5px;
+}
+#footer .container .content .left p{
+    font-family: 'Belleza', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+#footer .container .content .right{
+    width: 40%;
+}
+#footer .container .content .right input{
+    padding: 10px 60px;
+    border: none;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    outline: none;
+}
+#footer .container .content .right button{
+    font-family: 'Bebas Neue', cursive;
+    padding: 10px 35px;
+    border: none;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    background: #302725;
+    color:#f0f8ff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+#footer .container .content .right button:hover{
+    border: solid 2px #302725;
+    background: none;
+    color:#302725;
+    transform: scale(1);
+}
+#footer .container .info{
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#footer .container .info .box{
+    display: flex;
+    flex-direction: column;
+}
+#footer .container .info .box h1{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#footer .container .info .box p,
+#footer .container .info .box a{
+    font-family: 'Belleza', sans-serif;
+    margin-top: 10px;
+    color:#737373;
+    text-decoration: none;
+    font-weight: 600;
+}
+#footer .container .info .box ion-icon{
+    font-size: 1.6rem;
+}
+#footer .container .info .box ion-icon:hover{
+    color:#b48c56
+}
+#footer .container .line{
+    width: 80%;
+    height: 1px;
+    background: #b48c56;
+    margin-top: 60px;
+}
+#footer .container .copyright{
+    font-family: 'Belleza', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:#302725
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1440px){
+    header .menu ul li{
+        padding: 0 25px
+    }
+    header .menu ul li a{
+        font-size: 1.1rem;
+    }
+    #about .container .title{
+        padding-top: 80px;
+        margin-left: 60px;
+    }
+    #about .container .title .call{
+        top:50px
+    }
+    #about .container .content .box{
+        height: 55vh;
+    }
+}
+@media screen and (max-width: 1024px){
+    header{
+        background: rgb(241, 241, 241);
+        justify-content: space-between;
+        padding: 0 40px;
+        
+    }
+    header .logo img{
+        width: 120px;
+        margin: 0 5px;
+    }
+    header .menu{
+        display: none;
+
+    }
+    header .menu-mobile{
+        display: block;
+        width: 350px;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        visibility: visible;
+       
+        
+    }
+    header .menu-mobile ul{
+        padding: 70px;
+        list-style: none;
+
+    }
+    header .menu-mobile ul li{
+        padding: 20px 0;
+        text-align: justify;
+
+    }
+    header .menu-mobile ul li a{
+        font-family: 'Belleza', sans-serif;
+        color: #f2d2a3;
+        text-decoration: none;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+
+    }
+    header .menu-mobile ul li a:hover{
+        text-decoration: underline;
+    }
+    header .menu-mobile .btn,
+    header .btn{
+        display: block;
+        position: fixed;
+        right: 100px;
+        top: 10px;
+    }
+    header .menu-mobile .btn ion-icon,
+    header .btn ion-icon{
+        color: #ddb06e;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    #home .container{
+        background-size: 105% 100%;
+    }
+    #home .container .content{
+        width: 70%;
+    }
+    #home .container .content h1{
+        font-size: 2rem;
+    }
+    #home .container .content p{
+        font-size: 1.5rem;
+    }
+    #home .container .content span{
+        font-size: 2rem;
+    }
+    #home .container .content .button{
+        padding-top: 70px;
+    }
+    #home .container .content .button button{
+        font-size: 1.1rem;
+    }
+    #branch .container .content .box{
+        width: 28%;
+    }
+    #branch .container .box button{
+        padding: 8px 18px;
+    }
+    #about .container{
+        margin-bottom: -70px;
+    }
+    #about .container .title{
+        width: 100%;
+        padding-top: 60px;
+        padding-right: 300px;
+    }
+    #about .container .title .call{
+        width: 60%;
+        top: 60px;
+        left: 150px;
+    }
+    #about .container .title .call h2{
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    #about .container .title .call p{
+        font-size: 1.2rem;
+    }
+    #products .container{
+        padding-bottom: 65%;
+       
+    }
+    #products .container .card{
+        width: 80%;
+    }
+    #products .container .card .box{
+        padding: 200px 0;
+    }
+    #team .container{
+      display: flex;
+      margin-bottom: -150px;
+    }
+    #news .container .content .box h3{
+        font-size: 1.1rem;
+    }
+    #news .container .content .box img{
+        width: 100px;
+    }
+    #news .container .content .box h1{
+        font-size: 1.2rem;
+    }
+    #news .container .content .box p{
+        font-size: 1.1rem;
+    }
+    #news .container .content {
+        height: 60vh;
+    }
+    #footer .container{
+        height: 120vh;
+        margin-top: -200px;
+    }
+
+    #footer .container .copyright{
+        margin-bottom: -180px;
+    }
+    #footer .container .content .left h1{
+        font-size: 1.6rem;
+        margin-top: 50px;
+    }
+    #footer .container .content .left p{
+        margin-bottom: 50px;
+    }
+    #footer .container .content .right button{
+        margin-left: 50px;
+    }
+    #footer .container .info{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 750px){
+    #home .container{
+        background-size: 110% 100%;
+    }
+    #branch .container{
+        height: 150vh;
+    }
+
+    #branch .container .content{
+        height: 70vh;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #branch .container .content .box{
+        width: 40%;
+        height: 55vh;
+    }
+    #branch .container .content .box h3{
+        margin-top: 10px;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+    #branch .container .content .box h1{
+        margin-top: 25px;
+        font-size: 1.1rem;
+    }
+    #branch .container .content .box img{
+        margin-bottom: -20px;
+        width: 80px;
+        margin-top: -20px;
+    }
+    #branch .container .content .box P{
+        margin-top: 10px;
+    }
+    #branch .container .content .box button{
+        margin-top: 10px;
+        padding: 10px 10px;
+        font-size: 0.9rem;
+    }
+    #about .container{
+        height: 100vh;
+    }
+   
+    #about .container .title h1{
+        margin-right: -90px;
+    }
+    #about .container .title .line{
+        margin-right: -50px;
+    }
+
+    #products .container{
+       height: 110vh;
+    }
+    #news .container{
+        height: 170vh;
+        padding-top: 100px;
+    }
+    #news .container .title{
+        padding-bottom: 100px;
+    }
+    #news .container .content{
+        min-height: 100vh;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-top: -60px;
+    }
+    #news .container .content .box{
+        width: 35%;
+    }
+    #team .container{
+        height: 100vh;
+        padding-top: 5px;
+        padding-bottom: 250px;
+        background-size: 105% 100%;
+    }
+    #team .container .content .cards{
+        flex-direction: column;
+    }
+    #team .container .content .cards .image img{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    #footer .container{
+        height: 130vh;
+    }
+    #footer .container .content{
+        height: 45vh;
+        flex-direction: column;
+    }
+    #footer .container .content .left{
+        width: 80%;
+        margin-left: 0;
+    }
+    #footer .container .content .left h1{
+        font-size: 1.8rem;
+        margin-top: 15px;
+    }
+    #footer .container .content .left p{
+        font-size: 1.5rem;
+        margin-bottom: 1px;
+        
+    }
+    #footer .container .content .right{
+        width: 80%;
+        height: 10vh;
+    }
+    #footer .container .content .right input{
+        margin-bottom: 10px;
+    }
+ 
+}
+@media screen and (max-width: 680px){
+    #home .container{
+        background: url(res1.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    #branch .container{
+        background: url(res2.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    #about .container{
+        background: url(res3.png) no-repeat;
+        background-size: contain;
+        height: 80vh;
+        margin-bottom: 130px;
+        width: 100%;
+        margin-left: 100px;
+
+    }
+    #about .container .title{
+        align-items: center;
+        width: 100%;
+        margin-left: 10px;
+    }
+    #about .container .title .call{
+        width: 100%;
+        align-items: center;
+        left: 0;
+        margin-bottom: -350px;
+    }
+    #footer .container{
+        margin-top: -230px;
+    }
+    #products .container{
+        margin-top: -150px;
+    }
+    #team .container{
+        margin-top: -150px;
+        background: url(res2.png) no-repeat;
+        background-size: 100% 100%;
+        height: 145vh;
+        padding-bottom: 350px;
+    }
+    #team .container .content{
+        width: 100%;
+        height: 40vh;
+        margin-top: -100px;
+    }
+    #news .container{
+        margin-top: -150px;
+    }
+    #news .container .title h1{
+        padding-bottom: 50px;
+    }
+    #footer .container{
+        margin-top: -350px;
+        height: 100vh;
+    }
+    #footer .container .content{
+        margin-top: -350px;
+    }
+    #footer .container .content {
+        margin-bottom: 50px;
+    }
+
+    #footer .container .content .right{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer .container .content .right button{
+        margin-top: 10px;
+        margin-right: 50px;
+
+    }
+    #footer .container .info{
+        height: 50vh;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    #footer .container .info .box{
+        width: 80%;
+        align-items: center;
+        margin: 5px;
+    }
+    #footer .container .info .box h1{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+}

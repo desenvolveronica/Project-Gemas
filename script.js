@@ -1,0 +1,42 @@
+$('.card').owlCarousel({
+    margin:20,
+    loop:true,
+    autoplay:true,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1440:{
+            items:3,
+            nav:false
+        }
+    }
+})
+
+$('.btn').click(function(){
+    $('.menu-mobile').slideToggle('slow')
+})
+$('.home').click(function(){
+    $('.menu-mobile').slideToggle('slow')
+})
+$('.branch').click(function(){
+    $('.menu-mobile').slideToggle('slow')
+})
+$('.about').click(function(){
+    $('.menu-mobile').slideToggle('slow')
+})
+$('.products').click(function(){
+    $('.menu-mobile').slideToggle('slow')
+})
+$('.news').click(function(){
+    $('.menu-mobile').slideToggle('slow')
+})
+$('.footer').click(function(){
+    $('.menu-mobile').slideToggle('slow')
+})
